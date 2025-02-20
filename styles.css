@@ -1,0 +1,53 @@
+/* styles.css */
+*{
+  /*Colors*/
+  --primary-color: #FFFFFF;
+  --secondary-color: #FFFFFF;
+  --card-color: #16151A;
+  --accent-color: #00C2FF;
+  --text-color: #fff;
+  --background-color: #050407;
+
+   /* sizes */
+   --title: 3.5em;
+   --subtitle: 2.5em;
+   --icons: 2.3em;
+   --smalltitle: 1.5em;
+   --navigation: 1.4em;
+   --quote: 1.2em;
+   --body: 1em;
+   --list: 0.8em;
+
+     /* weights */
+  --bold: 700;
+  --semi-bold: 600;
+  --regular: 400;
+
+  /* font-families */
+  --Exo: "Exo 2", sans-serif;
+  --Inter: "Inter", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    font-family:(var(--Exo));
+    background-color: var(--background-color);
+}
+
+#home{
+  background-color: var(--background-color);
+}
+.navbar{
+  font-size: var(--navigation);
+  font-weight: var(--bold);
+}
+.profielfoto{
+  width: 100%;
+  height: auto;
+}
+#home h1{
+  font-size: var(--title);
+}
+
+  
