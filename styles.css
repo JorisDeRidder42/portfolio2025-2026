@@ -12,11 +12,10 @@
    --title: 3.5em;
    --subtitle: 2.5em;
    --icons: 2.3em;
+   --button:2.1em;
    --smalltitle: 1.5em;
-   --navigation: 1.4em;
    --quote: 1.2em;
    --body: 1em;
-   --list: 0.8em;
 
      /* weights */
   --bold: 700;
@@ -24,7 +23,7 @@
   --regular: 400;
 
   /* font-families */
-  --Exo: "Exo 2", sans-serif;
+  --Exo: "Exo 2", serif;
   --Inter: "Inter", sans-serif;
 }
 
@@ -48,6 +47,30 @@ body {
 }
 #home h1{
   font-size: var(--title);
+  font-weight: var(--regular);
 }
-
+.button{
+  text-decoration: none;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-size: var(--button);
+  font-family: var(--Exo);
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+}
+.button:hover{
+  cursor: pointer;
+  color: var(--primary-color);
+}
+a.nav-link{
+  color: var(--primary-color)!important;
+}
+a.nav-link-active{
+  color: var(--accent-color);
+}
+a.nav-link:hover{
+  color: var(--accent-color)!important;
+}
   
