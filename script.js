@@ -26,3 +26,22 @@ document.querySelector("h6").onmouseover = event => {
     iteration += 1 / 3;
   }, 30);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const image = document.querySelector(".image-container img");
+
+  image.addEventListener("mousemove", (e) => {
+      const { left, top, width, height } = image.getBoundingClientRect();
+      const x = (e.clientX - left) / width - 0.5; // Normalize (-0.5 to 0.5)
+      const y = (e.clientY - top) / height - 0.5;
+
+      const skewX = x * 15; // Adjust skew intensity
+      const skewY = y * 15;
+
+      image.style.transform = `skew(${skewX}deg, ${skewY}deg) scale(1)`;
+  });
+
+  image.addEventListener("mouseleave", () => {
+      image.style.transform = "skew(0deg, 0deg) scale(1)";
+  });
+});
