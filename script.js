@@ -44,4 +44,18 @@ document.addEventListener("DOMContentLoaded", () => {
   image.addEventListener("mouseleave", () => {
       image.style.transform = "skew(0deg, 0deg) scale(1)";
   });
+
+  function getRandomColor() {
+    return `#${Math.floor(Math.random()*16777215).toString(16)}`;
+}
+
+document.querySelectorAll(".box").forEach(box => {
+    box.addEventListener("mouseenter", function() {
+        this.style.background = getRandomColor();
+    });
+
+    box.addEventListener("mouseleave", function() {
+        this.style.background = "#111"; // Reset to default color
+    });
+});
 });
