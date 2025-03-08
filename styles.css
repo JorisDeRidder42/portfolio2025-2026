@@ -9,6 +9,7 @@
   --background-color: #050407;
 
    /* sizes */
+   --largeIcons: 6em;
    --title: 3.5em;
    --subtitle: 2.5em;
    --icons: 2.3em;
@@ -105,4 +106,8 @@ a.nav-link:hover{
 .image-container:hover img {
   transform: scale(1); /* Slight zoom */
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+.fa-brands{
+  font-size: var(--largeIcons);
+  color: var(--primary-color);
 }
