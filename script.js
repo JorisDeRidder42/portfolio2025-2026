@@ -49,13 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
     return `#${Math.floor(Math.random()*16777215).toString(16)}`;
 }
 
-document.querySelectorAll(".box").forEach(box => {
-    box.addEventListener("mouseenter", function() {
+document.querySelectorAll(".cards").forEach(cards => {
+    cards.addEventListener("mouseenter", function() {
         this.style.background = getRandomColor();
     });
 
-    box.addEventListener("mouseleave", function() {
-        this.style.background = "#111"; // Reset to default color
+    cards.addEventListener("mouseleave", function() {
+        this.style.background = "#16151A"; // Reset to default color
     });
 });
 });

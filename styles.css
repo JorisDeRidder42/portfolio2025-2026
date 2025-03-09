@@ -82,6 +82,10 @@ a.nav-link:hover{
   background-color: var(--card-color);
   font-size: var(--body);
 }
+.cards{
+  background-color: var(--card-color);
+  font-size: var(--body);
+}
 .headtitle{
   font-size: var(--subtitle);
   font-weight: var(--regular);
